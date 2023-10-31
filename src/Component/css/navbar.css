@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+
+:root {
+  --navbar-white: #fafafa;
+  --navbar-black: #131313;
+  --navbar-active-color: #fafafa;
+  --navbar-bg-active-color: #ff9900;
+  --bg-light-blue: #00c6ff;
+  --bg-dark-blue: #0072ff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--navbar-white);
+}
+.jumbo {
+  padding-top: 100px;
+  min-height: 200vh;
+}
+
+.shrink .navbar {
+  color: var(--navbar-white);
+  background: var(--bg-dark-blue);
+  background: -webkit-linear-gradient(55deg,var(--bg-light-blue) 10%,var(--bg-dark-blue) 90%);
+  background: linear-gradient(35deg,var(--bg-light-blue) 10%,var(--bg-dark-blue) 90%);
+}
