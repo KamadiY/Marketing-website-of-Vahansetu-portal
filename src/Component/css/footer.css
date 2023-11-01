@@ -140,6 +140,13 @@
 {
   background-color:#3b5998
 }
+.social-icons{
+  margin-top: 8px;
+}
+.social-icons i{
+  font-size: 1.6rem;
+  margin-top: 8px;
+}
 .social-icons a.twitter:hover
 {
   background-color:#00aced

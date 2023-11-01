@@ -1,5 +1,7 @@
 import React from 'react';
 import './css/footer.css';
+// import { FaRoadBarrier } from 'react-icons/fa6';
+
 
 function Footer() {
   return (
@@ -13,7 +15,7 @@ function Footer() {
             </div>
 
             <div className="col-xs-6 col-md-3">
-                <h6>Get In hrefuch With Us</h6>
+                <h6>Get In Touch With Us</h6>
                 <ul className="footer-links">
                 <li><a href="/">Contact us for further queries</a></li>
                 <li><a href="/">+91 8881831836</a></li>
@@ -24,11 +26,9 @@ function Footer() {
             <div className="col-xs-6 col-md-3">
                 <h6>Quick Links</h6>
                 <ul className="footer-links">
-                <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Services</a></li>
-                <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                <li><a href="http://scanfcode.com/sitemap/">Testimonial</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#services">Services</a></li>
                 </ul>
             </div>
             </div>
@@ -43,10 +43,10 @@ function Footer() {
 
             <div className="col-md-4 col-sm-6 col-xs-12">
                 <ul className="social-icons">
-                <li><a className="facebook" href="/"><i className="fa fa-facebook"></i></a></li>
-                <li><a className="twitter" href="/"><i className="fa fa-twitter"></i></a></li>
-                <li><a className="dribbble" href="/"><i className="fa fa-dribbble"></i></a></li>
-                <li><a className="linkedin" href="/"><i className="fa fa-linkedin"></i></a></li>   
+                <li><a className="twitter" href="/"><i class='bx bxl-twitter'></i></a></li>
+                <li><a className="facebook" href="/"><i class='bx bxl-facebook-circle' ></i></a></li>
+                <li><a className="dribbble" href="/"><i class='bx bxl-instagram-alt' ></i></a></li>
+                <li><a className="linkedin" href="/"><i class='bx bxl-linkedin-square' ></i></a></li>   
                 </ul>
             </div>
             </div>

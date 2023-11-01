@@ -1,54 +1,57 @@
-import { HiQrcode, HiDeviceMobile } from 'react-icons/hi';
-import { HiBellAlert } from 'react-icons/hi2';
-import { BsFillCarFrontFill } from "react-icons/bs";
+import { FaRoadBarrier } from 'react-icons/fa6';
+import { BiSolidCarCrash, BiRun } from 'react-icons/bi';
+import { GiTowTruck } from 'react-icons/gi';
+import { BsFillSignNoParkingFill } from 'react-icons/bs';
+import { AiFillCloseSquare, AiFillFire, AiFillUnlock } from 'react-icons/ai';
+// import { BsFillCarFrontFill } from "react-icons/bs";
+import "./css/news.css";
 
 const features = [
   {
-    name: 'Park Wrong',
-    icon: HiQrcode,
+    name: 'Wrong Parking',
+    icon: BsFillSignNoParkingFill,
   },
   {
     name: 'Block The Road',
-    icon: BsFillCarFrontFill,
+    icon: FaRoadBarrier,
   },
   {
     name: 'Lost or Abandoned',
-    icon: HiBellAlert,
+    icon: AiFillCloseSquare,
   },
   {
     name: 'Hit and Run',
-    icon: HiDeviceMobile,
+    icon: BiRun,
   },
   {
     name: 'Not Locked',
-    icon: HiDeviceMobile,
+    icon: AiFillUnlock,
   },
   {
     name: 'Tow Alert',
-    icon: HiDeviceMobile,
+    icon: GiTowTruck,
   },
   {
     name: 'Fire & Other Threat',
-    icon: HiDeviceMobile,
+    icon: AiFillFire,
   },
   {
-    name: 'Accident Alert (inform   victim family)',
-    icon: HiDeviceMobile,
+    name: 'Accident Alert ',
+    icon: BiSolidCarCrash,
   },
 ]
 
-export default function Example() {
+export default function News() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Q</h2>
+        <div className="mx-auto max-w-2xl lg:text-center"> 
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             When and Where?
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl Center">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16 GridGap">
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-900">

@@ -1,0 +1,8 @@
+.Center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.GridGap{
+    column-gap: 10rem;
+}
