@@ -35,12 +35,14 @@ body {
 .navbar {
   /* Override the --navbar-white variable */
   --navbar-white: pink;
-  background-color: var(--navbar-white);
+  /* background-color: var(--navbar-white); */
   border: 1px solid #ccc;
   position: fixed;
   width: 100vw;
   z-index: 10;
   height: 4rem;
+  justify-content: center;
+  background: linear-gradient( rgb(255, 239, 186, 0.9), rgb(255, 255, 255, 0.9));
 }
 
 .navbar ul li:hover{
@@ -67,4 +69,33 @@ body {
 .navHeader span{
   font-weight: 500;
   color: #1f4e88;
+}
+
+@media only screen and (max-width: 991px) {
+  
+  .navbar-collapse{
+    background-color: white;
+    display: flex;
+    border-radius: 1em;
+    padding-right: 1.3rem;
+  }
+  .container{
+    max-width: 800px;
+  }
+  .navbar-collapse ul li{
+    display: flex;
+    justify-content: end;
+  }
+  #home{
+    position: relative;
+    min-height: 100vh;
+  }
+  #home .textArea p{
+    margin-top: 70%;
+  }
+}
+
+.navbar .container{
+  position: absolute;
+  top: 0;
 }

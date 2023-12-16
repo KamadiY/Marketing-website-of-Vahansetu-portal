@@ -13,9 +13,11 @@ import Testimonial from './Component/Testimonial';
 
 
 function App() {
+
   return (
     <>
     {/* <BrowserRouter>
+    
     <Navbar />
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -26,6 +28,7 @@ function App() {
       </Routes>
     <Footer/>
     </BrowserRouter> */}
+
     <Navbar/>
     <Home/>
     <About/>

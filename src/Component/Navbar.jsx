@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
           <a className="navbar-brand navHeader" href="./About.jsx">
             <img src={logo} alt="Vahan Setu Logo" />

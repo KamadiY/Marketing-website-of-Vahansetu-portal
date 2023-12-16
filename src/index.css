@@ -8,18 +8,173 @@
     /* left: 0; */
     width: 45%;
     /* margin-top: -40%; */
+    margin-top: -10%;
 }
 .flexDisplay{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 .textArea h1{
     margin-bottom: 10%;
     /* margin-top: -10px; */
+    /* color: rgb(242, 47, 47); */
+
 }
 
 body{
     overflow-x: hidden;
 }
+
+
+@media only screen and (max-width: 700px) {
+    .textArea{
+        width: 100%;
+        position: relative;
+    }
+}
+
+#home .textArea p{
+    margin-top: -5%;
+}
+
+
+.featu{
+    /* border: 2px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    background: linear-gradient(30deg, rgb(189, 255, 255), rgb(107, 255, 255));
+    padding: 10px 10px 10px 80px;
+}
+
+.featu dt div{
+    margin-top: 3rem;
+    margin-right: 10rem;
+    margin-left: 10px;
+}
+
+.feat-content{
+    min-width: 90%;
+}
+
+#features .content1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    /* max-width: 1024px; */
+    width: 100%;
+    padding: 0 4%;
+    padding-top: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ @media screen and (max-width: 767px) {
+    .content {
+       padding-top: 300px;
+       flex-direction: column;
+    }
+ }
+ 
+ .card1 {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 370px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 16px;   
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+ }
+ 
+ .icon {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width:80px;
+    background: linear-gradient(90deg, #7ec9ff 0%, #48a7ff 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    color: black;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+ }
+ 
+ .material-icons.md-18 { font-size: 18px; }
+ .material-icons.md-24 { font-size: 24px; }
+ .material-icons.md-36 { font-size: 36px; }
+ .material-icons.md-48 { font-size: 48px; }
+ 
+ .card1 .title {
+    width: 100%;
+    margin: 0 4px;
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+ }
+ 
+ .card1 .text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    max-height:0;
+    transition: all 0.3s ease;
+ }
+ 
+ .card1:hover {
+    /* height: 270px; */
+    transform: scale(110%);
+ }
+ 
+ .card1:hover .info {
+    height: 90%;
+ }
+ 
+ .card1:hover .text {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height:40px;
+ }
+ 
+ .card1:hover .icon {
+    background-position: -120px;
+    transition: all 0.3s ease;
+ }
+ 
+ .card1:hover .icon i {
+    background: linear-gradient(90deg, #7ed4ff, #48e0ff);
+    background-clip: text;
+     -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+ }

@@ -3,6 +3,10 @@ import { AiFillContacts } from "react-icons/ai";
 import { BsHospital, BsFillSignNoParkingFill } from "react-icons/bs";
 import { BiMessageAltError, BiSupport } from "react-icons/bi";
 import "./style.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 export default function Services() {
   const ServicesText = {
@@ -17,19 +21,23 @@ export default function Services() {
     services_box_title5: "Hospital Details",
   };
 
+  useEffect(()=>{
+    AOS.init({duration: 2000});
+  },[]);
+
   return (
     <div id="services">
       <div className="serviceshome">
         <div className="page-title-area"></div>
         <div className="container">
           <div className="servicesheader">
-            <h2>{ServicesText.serviceshome_subheader}</h2>
-            <h4>{ServicesText.serviceshome_header}</h4>
-            <p>{ServicesText.serviceshome_subheader1}</p>
+            <h2 data-aos = "zoom-in" >{ServicesText.serviceshome_subheader}</h2>
+            <h4 data-aos = "fade" >{ServicesText.serviceshome_header}</h4>
+            <p data-aos = "fade">{ServicesText.serviceshome_subheader1}</p>
           </div>
           <div className="Row">
-            <div className="Card">
-              <div className="services-box-home m-3 boxShadow">
+            <div className="Card" data-aos="fade-up">
+              <div className="services-box-home boxShadow">
                 <BiMessageAltError className="icon1" />
                 <h4>{ServicesText.services_box_title1}</h4>
                 <p>
@@ -39,24 +47,24 @@ export default function Services() {
               </div>
             </div>
 
-            <div className="Card">
-              <div className="services-box-home m-3 boxShadow">
+            <div className="Card" data-aos="fade-down">
+              <div className="services-box-home boxShadow">
                 <AiFillContacts className="icon2" />
                 <h4>{ServicesText.services_box_title2}</h4>
                 <p>User Can acess Contact of person to info them</p>
               </div>
             </div>
 
-            <div className="Card">
-              <div className="services-box-home m-3 boxShadow">
+            <div className="Card" data-aos="fade-up">
+              <div className="services-box-home boxShadow">
                 <BiSupport className="icon3" />
                 <h4>{ServicesText.services_box_title3}</h4>
                 <p>Customer Support Available By 24/7 for any kind of help!</p>
               </div>
             </div>
 
-            <div className="Card">
-              <div className="services-box-home m-3 boxShadow">
+            <div className="Card" data-aos="fade-down">
+              <div className="services-box-home boxShadow">
                 <BsFillSignNoParkingFill className="icon3" />
                 <h4>{ServicesText.services_box_title4}</h4>
                 <p>
@@ -66,8 +74,8 @@ export default function Services() {
               </div>
             </div>
 
-            <div className="Card">
-              <div className="services-box-home m-3 boxShadow">
+            <div className="Card" data-aos="fade-up">
+              <div className="services-box-home boxShadow">
                 <BsHospital className="icon2" />
                 <h4>{ServicesText.services_box_title5}</h4>
                 <p>Provide Hospital Detail to any emergency situation</p>
